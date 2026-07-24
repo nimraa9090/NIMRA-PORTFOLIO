@@ -14,7 +14,9 @@ const certifications = [
   "Cybersecurity",
   "Python",
   "Freelancing",
-  "Google AI Studio",
+  "Google AI Studio"
+  "claude 101 & claude code 101 by anthropic"
+  "RDMA (roce) by Nvidia",
 ];
 
 export default function Skills() {
