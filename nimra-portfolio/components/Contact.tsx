@@ -1,5 +1,5 @@
 export default function Contact() {
-  const email = "your.email@example.com"; // TODO: replace with your real email
+  const email = "itsmenimrasaeed@gmail.com"; // TODO: replace with your real email
 
   return (
     <section
