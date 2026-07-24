@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b2b31 #101014;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #101014;
+  color: #f2efea;
+}
+
+/* Corner registration mark — the signature motif, borrowed from garment
+   pattern paper. Used sparingly on the hero tag and section frames. */
+.spec-corner {
+  position: relative;
+}
+.spec-corner::before,
+.spec-corner::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: #4fa8a0;
+  opacity: 0.8;
+}
+.spec-corner::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.spec-corner::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+.stitch-divider {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #2b2b31 0,
+    #2b2b31 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
